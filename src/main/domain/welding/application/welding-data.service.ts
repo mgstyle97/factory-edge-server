@@ -8,7 +8,7 @@ export class WeldingDataService {
   private readonly batchSize: number;
   private dataList: Array<RegisterWeldingDataDto> =
     new Array<RegisterWeldingDataDto>();
-  private requestSequence: number = 1;
+  private requestSequence: number = 90001;
   constructor(
     readonly configService: ConfigService,
     private readonly httpService: HttpService,

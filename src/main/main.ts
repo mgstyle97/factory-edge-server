@@ -11,6 +11,7 @@ async function bootstrap() {
       transport: Transport.MQTT,
       options: {
         url: process.env.BROKER_URL,
+        port: Number(process.env.PORT),
         username: process.env.USERNAME,
         password: process.env.PASSWORD,
       },
